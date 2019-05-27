@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EliminarPaisActivity">
+
+    <TextView
+        android:id="@+id/PaisEliminarIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Ingrese pais a eliminar:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/PaisEliminarId"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/PaisEliminarIntro"
+        android:inputType="text"
+        android:maxLength="20"
+        android:digits="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ123456789"
+
+        android:hint="Ingrese el id del pais"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffffff"
+        android:id="@+id/PaisEliminarBtnDelete"
+        android:layout_below="@+id/PaisEliminarId"
+
+        android:onClick="eliminarpais"
+
+        android:text="Eliminar"/>
+
+
+</android.widget.RelativeLayout>
